@@ -5,7 +5,17 @@ const app = express();
 app.use("/static", express.static("public"));
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => {});
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
+app.get("/signin", (req, res) => {
+  res.render("singin");
+});
 
 app.get("/signup", (req, res) => {
   res.render("signup", {
