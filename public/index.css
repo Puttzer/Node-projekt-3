@@ -1,0 +1,12 @@
+
+
+.active {
+    background-color: rgb(247, 248, 248);
+    border-radius:100px;
+     }
+
+
+a:active{
+    text-decoration: underline;
+ 
+    }

@@ -1,5 +1,5 @@
 {
-  "name": "node-projekt-3",
+  "name": "projekt-3",
   "version": "1.0.0",
   "description": "Node projekt 3",
   "main": "index.js",
@@ -19,5 +19,6 @@
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
