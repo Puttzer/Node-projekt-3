@@ -1,0 +1,23 @@
+{
+  "name": "node-projekt-3",
+  "version": "1.0.0",
+  "description": "Node projekt 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Puttzer/Node-projekt-3.git"
+  },
+  "author": "Patrick, Yasmin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Puttzer/Node-projekt-3/issues"
+  },
+  "homepage": "https://github.com/Puttzer/Node-projekt-3#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
