@@ -3,17 +3,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap');
 
-
+/* Gäller till hela sidan */
 html
   {
     font-family : "Lucida Sans" , sans-serif;
   }
 
   body{
-      margin: 0;
-      padding: 0;
-      text-align: center;
-  }
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 
 * {
     box-sizing: border-box;
@@ -25,29 +26,15 @@ html
 
   .container{
     display: grid;
-    padding: 10px;
-    background-image: radial-gradient(circle, rgb(201, 101, 126), rgb(42, 85, 114));
-     grid-template-areas:
-     'header header header header header header',
-     'grid-h1 grid-h1 grid-h1 grid-h1 grid-h1 grid-h1 ',
-     'grid-img grid-img grid-img grid-img grid-img grid-img ',
-     'grid-p-1 grid-p-1 grid-p-2 grid-p-2 grid-p-3 grid-p-3',
-     ' footer footer footer footer footer footer';
-     height: auto;
+     background-image: radial-gradient(circle, rgb(201, 101, 126), rgb(42, 85, 114));
+    height: 600px;
     width: 100%; 
-
     
 }
 
 
-p{
-    font-size: 30px;
-}
+  
 
-
-  
-  
-  
   
   
   header {
@@ -91,7 +78,7 @@ p{
 
 
   .pm{          
-    display: flex;
+    flex: 100%;
     border-radius: 5px;
     text-align: center;
     width: 400px;
@@ -101,13 +88,7 @@ p{
      position: center;
    }
   
-   h1{
-       text-shadow: 2px 2px 5px rgb(19, 126, 126);
-    text-align: center;
-    padding: 100px 0 0;
-    font-size: 50px ;
-
-}
+   h1{text-shadow: 2px 2px 5px rgb(19, 126, 126);}
   
   .contact{
     font-family: 'PT Sans Caption', sans-serif;
@@ -120,11 +101,11 @@ p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
-  input{
-    height: 45px;
-  } 
+  /* input:focus{
+    background-color: beige;
+  } */
 
-  /* .button {
+  .button {
     background-color: rgb(67, 128, 168);
     border: none;
     color: rgb(26, 24, 24);
@@ -136,7 +117,7 @@ p{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 20px;
-  } */
+  }
    .button:hover{
     color: #142529;
     font-size: 20px;  

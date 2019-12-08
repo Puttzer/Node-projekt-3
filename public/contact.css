@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap');
 
-
+/* Gäller till hela sidan */
 html
   {
     font-family : "Lucida Sans" , sans-serif;
@@ -25,29 +25,29 @@ html
 
   .container{
     display: grid;
-    padding: 10px;
-    background-image: radial-gradient(circle, rgb(201, 101, 126), rgb(42, 85, 114));
-     grid-template-areas:
-     'header header header header header header',
-     'grid-h1 grid-h1 grid-h1 grid-h1 grid-h1 grid-h1 ',
-     'grid-img grid-img grid-img grid-img grid-img grid-img ',
-     'grid-p-1 grid-p-1 grid-p-2 grid-p-2 grid-p-3 grid-p-3',
-     ' footer footer footer footer footer footer';
-     height: auto;
+     background-image: radial-gradient(circle, rgb(201, 101, 126), rgb(42, 85, 114));
+    height: auto;
     width: 100%; 
 
     
 }
 
 
-p{
-    font-size: 30px;
-}
-
-
+  .form-box{
+      width: 600px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom:4px solid  rgb(42, 85, 114);
+      color: black;
+      font-size: 20px;
+      margin-bottom: 16px;
+  }
   
-  
-  
+  ::placeholder { 
+    color:black;
+    opacity: 1; 
+  }
   
   
   header {
