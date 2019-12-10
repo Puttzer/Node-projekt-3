@@ -10,12 +10,16 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
 app.get("/about", (req, res) => {
   res.render("about");
 });
 
-app.get("/signin", (req, res) => {
-  res.render("singin");
+app.get("/sign-in", (req, res) => {
+  res.render("sign-in");
 });
 
 app.get("/signup", (req, res) => {

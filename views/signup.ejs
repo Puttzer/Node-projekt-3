@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up</title>
     <link rel="stylesheet" href="/static/signup.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-        <a id="top"></a>
-        <header>
-                <nav>
-                    <ul class="nav">
-                        <li><a  href="/index">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a  href="/contact">Contact Us</a></li>
-                        <li><a class="active" href="/">Sign Up</a></li>
-                        <li><a href="/signin">Sign In</a></li>
-                    </ul>
-                </nav>
-                
-            
-        
-            </header>
-            <div class="container">
-
-                
-
-            </div>
-            
-
-            <footer>
-                    <p>Posted by: FWR19S</p>
-                    <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
-                 
-                </footer>
-                <a  href="#top" id="down"><i class="fa fa-arrow-up" style="font-size:48px;color:#227093"></i></a>
-                
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     
+    <title>Signup</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a class="active" href="/">Sign Up</a></li>
+                <li><a href="/sign-in">Sign In</a></li>
+            </ul>
+        </nav>
+
+        
+        <form name="Sign-up">
+            <label for="fname">First Name:</label>
+            <input id="fname" type="text" name="firstname"> <span class="error hide"></span>
+            <br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname"> <span class="error hide"></span>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone"> <span class="error hide"></span>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"> <span class="error hide"></span>
+            <br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <br>
+
+            <label for="repeat-password">Repeat Password:</label>
+            <input type="password" name="repeat-password" id="password">
+
+
+            <input type="submit" id="button" value="Sign Up">
+        </form>
+    </div>
+
+    <footer>
+            <p>Posted by: FWR19S</p>
+            <p>
+              Contact information:
+              <a href="mailto:someone@example.com">someone@example.com</a>.
+            </p>
+          </footer>
+    <script src="/static/function.js"></script>
 </body>
+
 </html>
