@@ -14,8 +14,16 @@ app.get("/about", (req, res) => {
   res.render("about");
 });
 
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+
 app.get("/sign-in", (req, res) => {
   res.render("sign-in");
+});
+
+app.get("/thanks", (req, res) => {
+  res.render("thanks");
 });
 
 app.get("/signup", (req, res) => {
