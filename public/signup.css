@@ -7,53 +7,67 @@
 .container{
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
-}
-
-body{
-  
   background: #485563; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #485563, #29323c); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #485563, #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.navbar {
   width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  grid-area: 1/1/2/5;
-  background: transparent;
-  
 }
 
-.navbar ul {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.nav {
   list-style: none;
   display: flex;
-  margin: auto;
+  font-size: 0.7em;
+  text-shadow: 2px 2px 5px rgb(99, 182, 182);
+  position: relative;
+}
 
-  background: transparent;
+.nav li {
+  padding: 0px 20px;
+}
+
+.nav li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav li a:hover {
+  color: #142529;
+  font-size: 15px;
+}
+
+li a.active {
   
+  color: rgb(39, 125, 196);
+  text-decoration: underline;
 }
 
-.navbar ul a {
-  color: white;
-  display: block;
-  /* padding: 10px; */
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-  font-family: 'Cormorant Garamond', serif;
+
+footer{
+  text-align: center;
+   padding:0;
+ margin: 0;
+ }   
+
+ #down{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;         
 }
 
-.navbar a.active{
-  border-bottom: 3px solid white;
-  
-}
 
-.navbar a:hover {
-  border-bottom: 3px solid black;
-}
+
 
 
 
@@ -67,7 +81,7 @@ form{
   outline: none;
   margin: auto;
   margin-top: 2%; 
-  padding: 50px 5px;
+  padding: 0 5px 50px 5px;
   font-size: 14px;
   border-radius: 3px;
   color: white;
@@ -99,4 +113,38 @@ input{
 
 .error{
   color: red;
+  
+}
+
+
+footer{
+  text-align: center;
+   padding:0;
+ margin: 0;
+ }   
+
+ #down{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;         
+}
+@media only screen and (min-width: 768px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    font-size:2rem ;
+
+  }
+
+.nav{
+  display: flex;
+}
+ li a:hover {
+    color: #142529;
+    font-size: 30px;
+    
+  }
 }
