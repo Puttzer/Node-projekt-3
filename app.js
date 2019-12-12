@@ -239,5 +239,5 @@ app.get("/signup", (req, res) => {
   });
 });
 
-app.listen(4200);
+app.listen(process.env.PORT || 4000);
 
